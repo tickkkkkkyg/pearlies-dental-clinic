@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a visit — Pearlies Dental Clinic</title>
+  <meta name="description" content="Request an appointment with Pearlies Dental Clinic. Get an itemised estimate by email before you commit." />
+  <meta name="theme-color" content="#FBF8F4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='.85em' font-size='26' font-family='Georgia,serif' fill='%231F6F78'>P</text></svg>" />
+</head>
+<body class="is-loading">
+  <div class="loader" id="loader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="loader__mark" aria-hidden="true"></div>
+    <p class="loader__name">Pearlies Dental Clinic</p>
+    <p class="loader__sub">Preparing your visit</p>
+    <div class="loader__bar"><span></span></div>
+    <p class="loader__percent">0%</p>
+  </div>
+  <div class="page-transition" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead" id="masthead">
+    <div class="masthead__inner shell">
+      <a href="index.html" class="masthead__brand">Pearlies <small>Dental Clinic</small></a>
+      <nav class="masthead__links" id="menu" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="journal.html">Journal</a>
+        <a href="contact.html" class="masthead__cta" aria-current="page">Book a visit</a>
+      </nav>
+      <button class="masthead__toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section page-top">
+      <div class="shell booking">
+        <div class="booking__info" data-enter>
+          <span class="section__eyebrow">Appointment</span>
+          <h2>Request a visit</h2>
+          <p>Send a short note and we will reply with available slots. If you are in pain, say so in the message and we will fit you in sooner.</p>
+          <div class="booking__detail"><strong>Phone</strong><span>+977 1 441 2345</span></div>
+          <div class="booking__detail"><strong>Email</strong><span>hello@pearliesdental.example</span></div>
+          <div class="booking__detail"><strong>Address</strong><span>Kalanki, Kathmandu</span></div>
+          <div class="booking__detail"><strong>Hours</strong><span>Mon–Fri 9am–6pm · Sat 9am–1pm</span></div>
+          <div class="booking__detail"><strong>Emergency</strong><span>Same-day slots kept open each day</span></div>
+        </div>
+        <form class="form" id="bookingForm" data-enter novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+            <p class="field__error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+            <p class="field__error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+            <p class="field__error" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="service">What do you need?</label>
+            <select id="service" name="service">
+              <option>Check-up &amp; clean</option>
+              <option>Toothache / infection</option>
+              <option>Filling</option>
+              <option>Root canal</option>
+              <option>Crown or bridge</option>
+              <option>Gum care</option>
+              <option>Whitening / veneers</option>
+              <option>Children's visit</option>
+              <option>Emergency</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">A few words (optional)</label>
+            <textarea id="message" name="message" placeholder="Anything you would like us to know before you arrive."></textarea>
+            <p class="field__error" role="alert"></p>
+          </div>
+          <button type="submit" class="btn btn--solid" style="width:100%">Send request</button>
+          <p class="form__note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <div class="footer__top">
+        <div><p class="footer__name">Pearlies Dental Clinic</p><p class="footer__role">General &amp; restorative dentistry · Kalanki, Kathmandu</p></div>
+        <nav class="footer__links" aria-label="Footer">
+          <a href="services.html">Services</a><a href="about.html">About</a><a href="gallery.html">Gallery</a><a href="testimonials.html">Reviews</a><a href="faq.html">FAQ</a><a href="journal.html">Journal</a><a href="contact.html">Book a visit</a>
+        </nav>
+      </div>
+      <div class="footer__bottom"><p>© <span id="year">2026</span> Pearlies Dental Clinic. All rights reserved.</p><p>Registered dental practice.</p></div>
+    </div>
+  </footer>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+  <script src="assets/main.js"></script>
+</body>
+</html>
